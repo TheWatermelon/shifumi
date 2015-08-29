@@ -4,11 +4,14 @@
 
 int main()
 {
-// Variables utiles pour le shifumi
-//  a et b sont les choix possibles, c le nombre de manches et s le score
+/* 
+** Variables utiles pour le shifumi
+** a et b sont les choix possibles, c le nombre de manches et s le score 
+*/
 int a = 0, b = 0, c = 0, s_player = 0, s_IA = 0;  
 
 system("clear");
+/* system("cls"); */
 printf("      ~Shifumi~   \n");
 printf("Combien de manches? ");
 scanf("%d", &c);
@@ -26,6 +29,7 @@ while(c != 0)
   printf("Quel est ton choix? ");
   scanf("%d", &a);
   system("clear");
+  /* system("cls"); */
   // Partie IA
   srand(time(NULL));
   b = rand() % 3 + 1;
